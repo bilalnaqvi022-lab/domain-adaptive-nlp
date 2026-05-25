@@ -1,19 +1,28 @@
-<<<<<<< HEAD
-# NLP Project Scaffold - Overview
+# 🧠 Domain-Adaptive NLP Project
 
-This project focuses on **domain-adaptive NLP models**, including:
-- Baseline Text Classification
-- DANN (Domain Adversarial Neural Network)
-- DAPT (Domain-Adaptive Pretraining)
-- Aspect-based Sentiment Analysis
+This repository implements **domain adaptation techniques for NLP**, focusing on:
+
+- Aspect-Based Sentiment Analysis
+- Domain-Adversarial Neural Networks (DANN)
+- Domain-Adaptive Pretraining (DAPT)
+- Transformer fine-tuning (BERT, RoBERTa)
+
+It is applied to **Roman Urdu–English e-commerce reviews** and supports both research and deployment.
+
+---
+
+## 📌 Overview
 
 This project explores how NLP models generalize across domains using:
 
-- 📊 Supervised baseline models
+- 📊 Supervised baseline models (BERT / RoBERTa)
 - 🔄 Adversarial domain adaptation (DANN)
 - 🧬 Continued pretraining (DAPT)
-- 🎯 Aspect-based sentiment learning
-This project provides a modular NLP starter setup using `transformers`, `torch`, `datasets`, `scikit-learn`, `pandas`, and `matplotlib`.
+- 🎯 Aspect-based sentiment extraction
+
+It also includes a **Flask API for real-time sentiment prediction**.
+
+---
 
 ## 🧠 NLP Domain Adaptation Project Architecture
 nlp_project/
@@ -77,6 +86,8 @@ nlp_project/
 git clone https://github.com/your-username/domain-adaptive-nlp.git
 cd domain-adaptive-nlp
 pip install -r requirements.txt
+
+
 ## Quick start (PowerShell)
 `powershell
 python -m venv .venv
@@ -84,28 +95,30 @@ python -m venv .venv
 pip install -r requirements.txt
 python main.py
 
+
 Training Models:
-▶ Baseline Model
-python scripts/run_baseline.py
-▶ DANN Training
-python scripts/run_dann.py
-▶ DAPT Training
-python scripts/run_dapt.py
-📊 Evaluation
-python evaluation/evaluate.py
+            ▶ Baseline Model
+                        python scripts/run_baseline.py
+            ▶ DANN Training
+                        python scripts/run_dann.py
+            ▶ DAPT Training
+                        python scripts/run_dapt.py
+            📊 Evaluation
+                        python evaluation/evaluate.py
 
 ▶Metrics include:
--Accuracy
--F1-score
--Domain transfer performance
+            -Accuracy
+            -F1-score
+            -Domain transfer performance
 
 🧪 Key Methods
-🔹 DANN (Domain Adversarial Neural Network)
-Learns domain-invariant features using gradient reversal
-🔹 DAPT (Domain-Adaptive Pretraining)
-Continues pretraining on target domain data before fine-tuning
-🔹 Aspect Sentiment Model
-Extracts sentiment at aspect-level granularity
+            🔹 DANN (Domain Adversarial Neural Network)
+                        Learns domain-invariant features using gradient reversal
+            🔹 DAPT (Domain-Adaptive Pretraining)
+                        Continues pretraining on target domain data before fine-tuning
+            🔹 Aspect Sentiment Model
+                        Extracts sentiment at aspect-level granularity
+                        
 Results:
 | Model    | Source Acc | Target Acc | F1 Score |
 | -------- | ---------- | ---------- | -------- |
