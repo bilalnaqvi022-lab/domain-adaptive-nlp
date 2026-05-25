@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NLP Project Scaffold
 This project provides a modular NLP starter setup using `transformers`, `torch`, `datasets`, `scikit-learn`, `pandas`, and `matplotlib`.
 ## Project structure
@@ -17,3 +18,7 @@ python main.py
 ## Notes
 - Default pipeline uses a small IMDB subset for faster iteration.
 - First run will download model and dataset artifacts.
+=======
+# domain-adaptive-nlp
+Domain-Adaptive NLP project for Aspect-Based Sentiment Analysis on Roman Urdu-English e-commerce reviews using BERT, RoBERTa, and DANN. Includes domain adaptation, aspect extraction, transformer fine-tuning, Flask API deployment, and real-time sentiment prediction.
+>>>>>>> e071b5bea14a3d821b7b7b62d83fc8b59aa81d9a
